@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- henter alt informasjonen som siden trenger -->
+    <title>Spill gutta</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/brod.css">
+    <script src="js/jqverne.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+<!-- Her er navigasjons menyen og advarselen som brukeren for etv -->
+<nav class="nav nav-tabs nav-stacked">
+    <a class="nav-link disabled ">Spillgutta</a>
+    <a class="nav-link " href="index.html">Produkter</a>
+    <a class="nav-link " href="valuta.html">Valuta Kalkulator</a>
+    <a class="nav-link active" href="handlekurv.html">Handlekurv</a>
+</nav>
+<nav class="nav nav-tabs nav-stacked" id="advarsel">
+</nav>
+<br>
+<main>
+    <!-- her er knappene som sletter handlekurven -->
+    <input type="button" class="btn btn-primary fs-5" value="slett handlekurv" onclick="localStorage.clear();"><input type="button" class="btn btn-primary fs-5" value="Last handlekurven" onclick="handleVognen();">
+    <br>
+    <br>
+    <!-- <div>
+        <div class="d-flex ms-3 mb-3 flex-column ">
+            <div class=" d-flex mx-3 flex-column border border-2 bg-light">
+                <h3>placeholder
+                </h3>
+                <h4>antall: </h4>
+                <h5>pris:</h5>
+            </div>
+            <div class="d-flex mx-3 flex-row flex-fill border border-2 bg-light">
+                <div class="d-flex flex-fill fs-5 justify-content-end">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Her er hvor boksene ligger -->
+    <div id="kurv" class="d-flex flex-grow-1 flex-wrap flex-row"></div>
+    <hr>
+    <span><h1>Sum:</h1></span>
+</main>
+<noscript>Skru på javascript din tulling</noscript>
+<script src="js/kodu.js"></script>
+</body>
+
+</html>
